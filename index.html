@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adatközpontok – A digitális világ motorja</title>
+  <meta name="description" content="Ismerd meg az adatközpontok működését, energiafogyasztását és a mesterséges intelligencia szerepét!">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17263e;
+      background: #071a35;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 55px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #073b70, #10152e, #075c83);
+      border-bottom: 5px solid #ffd43b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.2;
+    }
+
+    header h1 span {
+      color: #ffe047;
+    }
+
+    header p {
+      max-width: 650px;
+      margin: 18px auto 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 14px;
+      background: #102743;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 9px 15px;
+      border-radius: 20px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: #1685bd;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 28px 18px;
+    }
+
+    .intro {
+      text-align: center;
+      color: white;
+      padding: 15px 10px 30px;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      overflow: hidden;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px #0004;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-top {
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 3.5rem;
+      background: #e4f3ff;
+    }
+
+    .card:nth-child(2) .card-top {
+      background: #e3f8e9;
+    }
+
+    .card:nth-child(3) .card-top {
+      background: #f0e6ff;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .card p {
+      color: #4a5870;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      color: #07518a;
+      background: #e1f2ff;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .info {
+      margin-top: 28px;
+      padding: 25px;
+      color: white;
+      background: linear-gradient(120deg, #12518b, #452a82);
+      border-radius: 18px;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info li {
+      margin: 8px 0;
+    }
+
+    footer {
+      margin-top: 35px;
+      padding: 25px 15px;
+      text-align: center;
+      color: #d7e8ff;
+      background: #041126;
+    }
+
+    footer a {
+      color: #ffe047;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        padding: 38px 15px;
+      }
+
+      main {
+        padding: 20px 12px;
+      }
+
+      .card-top {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="kezdo">
+    <h1>Adatközpontok <span>AI-val</span></h1>
+    <p>A digitális világ motorja – Ismerd meg, hogyan működnek
+      az adatközpontok, és miért fontosak a jövő számára!</p>
+  </header>
+
+  <nav aria-label="Fő navigáció">
+    <a href="#kezdo">Kezdőlap</a>
+    <a href="#energia">Áramfogyasztás</a>
+    <a href="#redundancia">Redundancia</a>
+    <a href="#ai">Az AI szerepe</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Mi történik az internet mögött?</h2>
+      <p>
+        A weboldalak, alkalmazások és mesterségesintelligencia-rendszerek
+        hatalmas számítógépes infrastruktúrákra támaszkodnak.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article class="card" id="energia">
+        <div class="card-top" aria-hidden="true">⚡</div>
+        <div class="card-content">
+          <h3>Áramfogyasztás</h3>
+          <p>
+            A szerverek folyamatosan működnek, ezért sok elektromos
+            energiára van szükségük. A hűtőrendszerek szintén jelentős
+            szerepet játszanak az energiafelhasználásban.
+          </p>
+          <span class="tag">Energiahatékonyság</span>
+        </div>
+      </article>
+
+      <article class="card" id="redundancia">
+        <div class="card-top" aria-hidden="true">🛡️</div>
+        <div class="card-content">
+          <h3>Redundancia</h3>
+          <p>
+            A tartalék áramellátás, hálózati kapcsolatok és szerverek
+            segítenek abban, hogy egy meghibásodás esetén is
+            folytatódhasson a szolgáltatás.
+          </p>
+          <span class="tag">Biztonság és megbízhatóság</span>
+        </div>
+      </article>
+
+      <article class="card" id="ai">
+        <div class="card-top" aria-hidden="true">🤖</div>
+        <div class="card-content">
+          <h3>Az AI szerepe</h3>
+          <p>
+            A mesterséges intelligencia segíthet a hűtés optimalizálásában,
+            a hibák korai felismerésében és az erőforrások
+            hatékonyabb felhasználásában.
+          </p>
+          <span class="tag">Intelligens működés</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="info">
+      <h2>Miért fontosak az adatközpontok?</h2>
+      <ul>
+        <li>Lehetővé teszik a weboldalak és online szolgáltatások működését.</li>
+        <li>Adatokat tárolnak és dolgoznak fel.</li>
+        <li>Hozzájárulnak a felhőszolgáltatások működéséhez.</li>
+        <li>Biztosítják a modern AI-rendszerek számítási kapacitását.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Adatközpontok – A digitális világ motorja</p>
+    <p>Készítette: <strong>A te neved</strong></p>
+    <p><a href="#kezdo">Vissza az oldal tetejére ↑</a></p>
+  </footer>
+</body>
+</html>
